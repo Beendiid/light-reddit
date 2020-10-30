@@ -1,0 +1,272 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  /* background-color: black;
+  color: rgb(177, 177, 177); */
+}
+
+.App {
+  max-width: 80%;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.header,
+.header input,
+.header select {
+  color: #fc683f;
+  list-style: none;
+  font-family: inherit;
+}
+.logo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #fc683f;
+}
+.logo input {
+  padding: 0.3rem 1rem;
+  width: 300px;
+  border-radius: 3px;
+  border: 1px solid #fc683f;
+}
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+}
+nav > *,
+nav > div > * {
+  margin-right: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+nav > div {
+  display: flex;
+  align-items: center;
+}
+nav select {
+  padding: 0.3rem 0.5rem;
+}
+.current-sub {
+  color: #000;
+  font-weight: 600;
+  opacity: 0.7;
+  margin-right: 2rem;
+}
+
+.body {
+  display: flex;
+  justify-content: space-between;
+}
+.body .main {
+  flex: 0.65;
+  margin-right: 2rem;
+}
+.body .comments {
+  flex: 0.35;
+}
+
+.post {
+  box-shadow: 0px 3px 6px #00000029;
+  border: 1px solid #70707050;
+  border-radius: 8px;
+  margin-bottom: 2rem;
+  white-space: pre-wrap;
+}
+.post img {
+  width: 100%;
+  border-radius: 5px;
+  border: none;
+  margin-top: 0.5rem;
+  object-fit: cover;
+  object-position: center;
+  cursor: pointer;
+  padding-left: 5rem;
+  padding-right: 5rem;
+}
+.post video {
+  width: 100%;
+  border-radius: 5px;
+  border: none;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+.active-post {
+  border: 1.3px solid #fc683f;
+  background-color: #fff8f6;
+}
+
+.post-wrapper {
+  padding: 1rem 2rem;
+  padding-bottom: 0.3rem;
+}
+.post .title {
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+.post .text {
+  margin: 1rem 0;
+}
+.post-footer {
+  display: flex;
+  align-items: center;
+  padding: 0.5rem 2rem;
+  border-top: 1px solid #70707080;
+}
+.post-footer > * {
+  margin-right: 1rem;
+  text-align: center;
+}
+.post-footer .username {
+  opacity: 0.5;
+}
+i {
+  display: inline;
+  color: #fc683f;
+  margin-right: 0.3rem;
+  font-size: 1.1rem;
+}
+.comment-btn {
+  cursor: pointer;
+}
+.subreddit-name {
+  color: #000;
+  background-color: #f0f0f0;
+  padding: 0.1rem 0.5rem;
+  border-radius: 3px;
+  cursor: pointer;
+}
+.active-post .subreddit-name {
+  background-color: #ffdbd1;
+}
+.active-post img {
+  mix-blend-mode: multiply;
+}
+.comments {
+  box-shadow: 0px 3px 6px #00000029;
+  border: 1px solid #70707050;
+  border-radius: 8px;
+  padding: 1rem;
+  height: 90vh;
+  overflow: hidden;
+  overflow-y: scroll;
+  position: sticky;
+  top: 1rem;
+}
+.comments .title {
+  font-size: 1.1rem;
+  color: #fc683f;
+  margin-left: 0.3rem;
+}
+.title-link {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+  position: relative;
+  margin-left: 1.5rem;
+}
+.title-link:before {
+  content: '\f0c1';
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 600;
+  color: #fc683f;
+  position: absolute;
+  left: -2rem;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.comment {
+  padding: 1rem 0;
+  border-bottom: 1px solid #fc683f70;
+  font-size: 14px;
+}
+.comment .username {
+  opacity: 0.5;
+}
+.comments-icon {
+  display: flex;
+  align-items: center;
+}
+
+.post-loading,
+.comment-loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.post-loading img {
+  width: 100px;
+  margin-top: 6rem;
+}
+.comment-loading img {
+  width: 70px;
+  margin-top: 5rem;
+}
+.comment-loading p {
+  margin-top: 8rem;
+  opacity: 0.3;
+  font-weight: bold;
+}
+
+.iframe {
+  width: 400px;
+}
+.iframe > * {
+  width: 400px;
+  height: 300px;
+  position: relative;
+}
+
+.btn {
+  padding: 0.3rem 0.7rem;
+  margin-left: auto;
+  border: 1px solid #fc683f90;
+  border-radius: 3px;
+  background-color: transparent;
+  color: #fc683f;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+.btn:hover {
+  box-shadow: 0px 1px 3px #00000029;
+}
+.btn-hide {
+  pointer-events: none;
+  opacity: 0.5;
+}
+
+details {
+}
+details .mention-username {
+  cursor: pointer;
+  color: #fc683f;
+  margin-right: 0.3rem;
+}
+summary {
+  font-size: 0.9rem;
+  opacity: 0.8;
+  color: #3d3d3d;
+  margin-bottom: 0.3rem;
+  cursor: pointer;
+}
+.reply {
+  background-color: #fdeeea;
+  padding: 0.5rem 1rem;
+  border-radius: 3px;
+  font-size: 14px;
+  border-bottom: 1px solid #fc683f90;
+}
+.reply-username {
+  cursor: pointer;
+  opacity: 0.5;
+}
