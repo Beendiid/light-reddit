@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/light-reddit/static/css/main.1cea3653.chunk.css",
-    "main.js": "/light-reddit/static/js/main.4084bc4b.chunk.js",
-    "main.js.map": "/light-reddit/static/js/main.4084bc4b.chunk.js.map",
+    "main.js": "/light-reddit/static/js/main.6eb22908.chunk.js",
+    "main.js.map": "/light-reddit/static/js/main.6eb22908.chunk.js.map",
     "runtime-main.js": "/light-reddit/static/js/runtime-main.299d7c05.js",
     "runtime-main.js.map": "/light-reddit/static/js/runtime-main.299d7c05.js.map",
     "static/js/2.6c07d777.chunk.js": "/light-reddit/static/js/2.6c07d777.chunk.js",
@@ -16,6 +16,6 @@
     "static/js/runtime-main.299d7c05.js",
     "static/js/2.6c07d777.chunk.js",
     "static/css/main.1cea3653.chunk.css",
-    "static/js/main.4084bc4b.chunk.js"
+    "static/js/main.6eb22908.chunk.js"
   ]
 }
