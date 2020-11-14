@@ -36,8 +36,6 @@ function Header({ currentSub, setCurrentSub }) {
           <option value='pics'>Pics</option>
           <option value='programming'>Programming</option>
           <option value='programmerhumor'>Programmer Humor</option>
-          <option value='incelswithouthate'>IWH</option>
-          <option value='femaledatingstrategy'>FDS</option>
           <option value='humansbeingbros'>humans Being Bros</option>
           <option value='cursedcomments'>Cursed Comments</option>
           <option value='rareinsults'>Rare Insults</option>
